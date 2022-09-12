@@ -12,11 +12,12 @@ html {
 
 // backgrounds colors flexbox text decoration padding
 
-$font: Arial;
+$font: Helvetica;
+$color1: rgb(186, 186, 186);
 
 body {
   font-family: $font;
-
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -36,4 +37,56 @@ nav {
     }
   }
 }
+
+// headlines box model (paddings, margins, borders) flexbox colors font-size, relative units
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../img/welcome.jpg");
+  margin: 0;
+  border: 0;
+  padding: 5rem 0;
+  color: white;
+    h1 {
+      font-size: 5rem;
+    }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: $color1;
+}
+
+.content {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+// for the PLOT: headlines flexbox font-size, relative units
+
+.plot {
+  display: flex;
+  flex-direction: column;
+  // color: red;
+  h3 {
+    text-align: center;
+    padding: 1em;
+    }
+  h4 {
+    font-weight: normal;
+    font-size: 1.1rem;
+    padding: 1em;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    img {
+      max-width: 10rem;
+    }
+    p{
+      padding: 1em;
+    }
+  }
 }
