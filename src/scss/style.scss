@@ -6,7 +6,9 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-}
+  margin: 0;
+  padding: 0;
+  }
 
 // backgrounds colors flexbox text decoration padding
 
@@ -14,7 +16,6 @@ $font: Arial;
 
 body {
   font-family: $font;
-}
 
 nav {
   display: flex;
@@ -34,4 +35,5 @@ nav {
       list-style-type: none;
     }
   }
+}
 }
