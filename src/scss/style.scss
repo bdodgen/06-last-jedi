@@ -14,6 +14,7 @@ html {
 
 $font: Helvetica;
 $color1: rgb(186, 186, 186);
+$icon-xy: 1rem;
 
 body {
   font-family: $font;
@@ -84,9 +85,25 @@ main {
     flex-direction: row;
     img {
       max-width: 10rem;
+      padding-bottom: 2em;
     }
     p{
       padding: 1em;
     }
   }
+}
+
+.characters {
+  &__content {
+    &__icon {
+      @use
+    }
+  }
+}
+
+.icon {
+  height: $icon-xy;
+  width: $icon-xy;
+  border-radius: 50%;
+  margin: 10px;
 }
